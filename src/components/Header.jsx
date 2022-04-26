@@ -14,34 +14,33 @@ const Header = () => {
       <nav classNameName="header__menu menu__body">
         <ul classNameName="menu__list">
           <li classNameName="menu__item menu__item--active">
-            <a classNameName="menu__link" href="#">
+            <a classNameName="menu__link" href="/">
               <i classNameName="icons icon-houm"></i> Home
             </a>
           </li>
           <li classNameName="menu__item">
-            <a classNameName="menu__link" href="#">
+            <a classNameName="menu__link" href="/">
               <i classNameName="icons icon-chats"></i>Chat
             </a>
           </li>
           <li classNameName="menu__item">
-            <a classNameName="menu__link" href="#">
+            <a classNameName="menu__link" href="/">
               <i classNameName="icons icon-chanels"></i>Channels
             </a>
           </li>
           <li classNameName="menu__item">
-            <a classNameName="menu__link" href="#">
+            <a classNameName="menu__link" href="/">
               <i classNameName="icons icon-contacts"></i>Contact
             </a>
           </li>
           <li classNameName="menu__item">
-            <a classNameName="menu__link" href="#">
+            <a classNameName="menu__link" href="/">
               <i classNameName="icons icon-setting"></i>Settings
             </a>
           </li>
 
           <li classNameName="menu__item">
-            <a classNameName="menu__link" href="#">
-              {" "}
+            <a classNameName="menu__link" href="/">
               <i classNameName="icons icon-logout"></i>Log out
             </a>
           </li>
