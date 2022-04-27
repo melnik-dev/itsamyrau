@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+aside,
+nav,
+header,
+footer,
+section {
+  display: block;
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  background-color: transparent;
+  border-width: 0;
+  cursor: pointer;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}

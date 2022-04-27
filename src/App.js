@@ -1,4 +1,7 @@
 import "./App.css";
+
+import "./Reset.css";
+import "./index.css";
 import Header from "./components/Header";
 import Choice from "./components/Choice";
 import Chats from "./components/Chats";
