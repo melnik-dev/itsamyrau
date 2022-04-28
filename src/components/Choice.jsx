@@ -3,7 +3,7 @@ import "./Choice.css";
 
 const Choice = () => {
   return (
-    <section classNameName="section__choice">
+    <section className="section__choice">
       <div className="choice__content">
         <div className="choice__header">
           <div className="choice__wrapp-title">

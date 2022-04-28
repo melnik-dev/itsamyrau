@@ -3,46 +3,46 @@ import "./Header.css";
 
 const Header = () => {
   return (
-    <header classNameName="section__header">
-      <div classNameName="header__avatar avatar">
+    <header className="section__header">
+      <div className="header__avatar avatar">
         <picture>
           <source srcset="img/garri_potter.webp" type="image/webp" />
-          <img classNameName="avatar__img" src="img/garri_potter.jpg" alt="garri potter" />
+          <img className="avatar__img" src="img/garri_potter.jpg" alt="garri potter" />
         </picture>
-        <span classNameName="avatar__name">Garri Potter</span>
+        <span className="avatar__name">Garri Potter</span>
       </div>
 
-      <nav classNameName="header__menu menu__body">
-        <ul classNameName="menu__list">
-          <li classNameName="menu__item menu__item--active">
-            <a classNameName="menu__link" href="/">
-              <i classNameName="icons icon-houm"></i> Home
+      <nav className="header__menu menu__body">
+        <ul className="menu__list">
+          <li className="menu__item menu__item--active">
+            <a className="menu__link" href="/">
+              <i className="icons icon-houm"></i> Home
             </a>
           </li>
-          <li classNameName="menu__item">
-            <a classNameName="menu__link" href="/">
-              <i classNameName="icons icon-chats"></i>Chat
+          <li className="menu__item">
+            <a className="menu__link" href="/">
+              <i className="icons icon-chats"></i>Chat
             </a>
           </li>
-          <li classNameName="menu__item">
-            <a classNameName="menu__link" href="/">
-              <i classNameName="icons icon-chanels"></i>Channels
+          <li className="menu__item">
+            <a className="menu__link" href="/">
+              <i className="icons icon-chanels"></i>Channels
             </a>
           </li>
-          <li classNameName="menu__item">
-            <a classNameName="menu__link" href="/">
-              <i classNameName="icons icon-contacts"></i>Contact
+          <li className="menu__item">
+            <a className="menu__link" href="/">
+              <i className="icons icon-contacts"></i>Contact
             </a>
           </li>
-          <li classNameName="menu__item">
-            <a classNameName="menu__link" href="/">
-              <i classNameName="icons icon-setting"></i>Settings
+          <li className="menu__item">
+            <a className="menu__link" href="/">
+              <i className="icons icon-setting"></i>Settings
             </a>
           </li>
 
-          <li classNameName="menu__item">
-            <a classNameName="menu__link" href="/">
-              <i classNameName="icons icon-logout"></i>Log out
+          <li className="menu__item">
+            <a className="menu__link" href="/">
+              <i className="icons icon-logout"></i>Log out
             </a>
           </li>
         </ul>
