@@ -1,68 +1,68 @@
 import React from "react";
-import "./Choice.css";
+import s from "./Choice.module.css";
 
 const Choice = () => {
   return (
-    <section className="section__choice">
-      <div className="choice__content">
-        <div className="choice__header">
-          <div className="choice__wrapp-title">
-            <h1 className="choice__title">Chats</h1>
-            <p className="choice__subtitle">Recent Chats</p>
+    <section className={s.section__choice}>
+      <div className={s.choice__content}>
+        <div className={s.choice__header}>
+          <div className={s["choice__wrapp-title"]}>
+            <h1 className={s.choice__title}>Chats</h1>
+            <p className={s.choice__subtitle}>Recent Chats</p>
           </div>
-          <button className="choice__btn btn">
+          <button className={`${s.choice__btn} btn`}>
             <i className="icons icon-plus"></i>Create new Chat
           </button>
         </div>
 
-        <div className="choice__search">
+        <div className={s.choice__search}>
           <i className="icons icon-search"></i>
-          <input className="choice__input-search" type="search" />
-          <button className="choice__btn-search">Search</button>
+          <input className={s["choice__input-search"]} type="search" />
+          <button className={s["choice__btn-search"]}>Search</button>
         </div>
-        <div className="choice__chat-wrapper">
-          <div className="choice__chat">
-            <div className="choice-chat__head">
-              <div className="choice-chat__avatar">
+        <div className={s["choice__chat-wrapper"]}>
+          <div className={s.choice__chat}>
+            <div className={s["choice-chat__head"]}>
+              <div className={s["choice-chat__avatar"]}>
                 <picture>
                   <source srcset="img/hermione.webp" type="image/webp" />
-                  <img src="img/hermione.jpg" alt="hermione" className="choice-chat__avatar-img" />
+                  <img className={s["choice-chat__avatar-img"]} src="img/hermione.jpg" alt="hermione" />
                 </picture>
               </div>
 
-              <div className="choice-chat__title-wrapp">
-                <div className="choice-chat__title">
-                  <h4 className="choice-chat__name">Hermione Granger</h4>
-                  <span className="choice-chat__stat">writes...</span>
+              <div className={s["choice-chat__title-wrapp"]}>
+                <div className={s["choice-chat__title"]}>
+                  <h4 className={s["choice-chat__name"]}>Hermione Granger</h4>
+                  <span className={s["choice-chat__stat"]}>writes...</span>
                 </div>
-                <span className="choice-chat__time">1 minute ago</span>
+                <span className={s["choice-chat__time"]}>1 minute ago</span>
               </div>
             </div>
-            <div className="choice-chat__content">
-              <span className="choice-chat__content-text">Hello how are you</span>
-              <span className="choice-chat__content-msg">2</span>
+            <div className={s["choice-chat__content"]}>
+              <span className={s["choice-chat__content-text"]}>Hello how are you</span>
+              <span className={s["choice-chat__content-msg"]}>2</span>
             </div>
           </div>
 
-          <div className="choice__chat choice__chat-active">
-            <div className="choice-chat__head">
-              <div className="choice-chat__avatar">
+          <div className={`${s.choice__chat} ${s["choice__chat-active"]}`}>
+            <div className={s["choice-chat__head"]}>
+              <div className={s["choice-chat__avatar"]}>
                 <picture>
                   <source srcset="img/ronwezlle.webp" type="image/webp" />
-                  <img src="img/ronwezlle.jpg" alt="Ron" className="choice-chat__avatar-img" />
+                  <img className={s["choice-chat__avatar-img"]} src="img/ronwezlle.jpg" alt="Ron" />
                 </picture>
               </div>
 
-              <div className="choice-chat__title-wrapp">
-                <div className="choice-chat__title">
-                  <h4 className="choice-chat__name">Ron Weasley</h4>
-                  <span className="choice-chat__stat">last online 5 hours ago</span>
+              <div className={s["choice-chat__title-wrapp"]}>
+                <div className={s["choice-chat__title"]}>
+                  <h4 className={s["choice-chat__name"]}>Ron Weasley</h4>
+                  <span className={s["choice-chat__stat"]}>last online 5 hours ago</span>
                 </div>
-                <span className="choice-chat__time">3 days ago</span>
+                <span className={s["choice-chat__time"]}>3 days ago</span>
               </div>
             </div>
-            <div className="choice-chat__content">
-              <span className="choice-chat__content-text">Hello! I tweaked everything you asked. I am sending the finished file.</span>
+            <div className={s["choice-chat__content"]}>
+              <span className={s["choice-chat__content-text"]}>Hello! I tweaked everything you asked. I am sending the finished file.</span>
             </div>
           </div>
         </div>
