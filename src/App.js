@@ -2,18 +2,14 @@ import "./App.css";
 
 import "./Reset.css";
 import "./index.css";
-import Header from "./components/Header";
-import Choice from "./components/Choice";
-import Chats from "./components/Chats";
+import Header from "./components/Header/Header";
+import Chat from "./components/Content/Chat/Chat";
 
 function App() {
   return (
     <div className="page__wrapper">
       <Header />
-      <div className="content__wrapper">
-        <Choice />
-        <Chats />
-      </div>
+      <Chat />
     </div>
   );
 }

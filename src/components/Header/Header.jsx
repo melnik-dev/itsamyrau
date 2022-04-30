@@ -16,7 +16,7 @@ const Header = () => {
         <ul className={s.menu__list}>
           <li className={`${s.menu__item} ${s["menu__item--active"]}`}>
             <a className={s.menu__link} href="/">
-              <i className="icons icon-houm"></i> Home
+              <i className="icons icon-houm"></i>Home
             </a>
           </li>
           <li className={s.menu__item}>
