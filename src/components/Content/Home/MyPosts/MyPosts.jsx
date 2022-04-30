@@ -6,9 +6,8 @@ const MyPosts = () => {
   return (
     <div className={s.posts}>
       <h2>Мои посты</h2>
-      <Post />
-      <Post />
-      <Post />
+      <Post message="Высоко, высоко в горах..." />
+      <Post message="Первый пост" />
     </div>
   );
 };

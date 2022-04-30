@@ -1,0 +1,33 @@
+.choice-chat__title-wrapp {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.choice-chat__name {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.choice-chat__stat {
+  font-size: 16px;
+  line-height: 19px;
+  color: #2a8bf2;
+}
+
+.choice-chat__time {
+  font-size: 16px;
+  line-height: 19px;
+  color: #707c97;
+}
