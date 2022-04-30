@@ -1,5 +1,6 @@
 import React from "react";
 import s from "./Choice.module.css";
+import ChoiceChat from "./ChoiceChat/ChoiceChat";
 
 const Choice = () => {
   return (
@@ -21,28 +22,7 @@ const Choice = () => {
           <button className={s["choice__btn-search"]}>Search</button>
         </div>
         <div className={s["choice__chat-wrapper"]}>
-          <div className={s.choice__chat}>
-            <div className={s["choice-chat__head"]}>
-              <div className={s["choice-chat__avatar"]}>
-                <picture>
-                  <source srcset="img/hermione.webp" type="image/webp" />
-                  <img className={s["choice-chat__avatar-img"]} src="img/hermione.jpg" alt="hermione" />
-                </picture>
-              </div>
-
-              <div className={s["choice-chat__title-wrapp"]}>
-                <div className={s["choice-chat__title"]}>
-                  <h4 className={s["choice-chat__name"]}>Hermione Granger</h4>
-                  <span className={s["choice-chat__stat"]}>writes...</span>
-                </div>
-                <span className={s["choice-chat__time"]}>1 minute ago</span>
-              </div>
-            </div>
-            <div className={s["choice-chat__content"]}>
-              <span className={s["choice-chat__content-text"]}>Hello how are you</span>
-              <span className={s["choice-chat__content-msg"]}>2</span>
-            </div>
-          </div>
+          <ChoiceChat />
 
           <div className={`${s.choice__chat} ${s["choice__chat-active"]}`}>
             <div className={s["choice-chat__head"]}>

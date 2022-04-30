@@ -1,8 +1,8 @@
 import React from "react";
 import s from "./Post.module.css";
 
-const Post = () => {
-  return <div className={s.post}>Пост 1</div>;
+const Post = (props) => {
+  return <div className={s.post}>{props.message}</div>;
 };
 
 export default Post;
