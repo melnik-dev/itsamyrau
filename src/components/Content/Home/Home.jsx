@@ -8,7 +8,7 @@ const Home = () => {
       <div className={s.profile}>
         <div className={s.avatar}>
           <picture>
-            <source srcset="img/garri_potter.webp" type="image/webp" />
+            <source srcSet="img/garri_potter.webp" type="image/webp" />
             <img className={s.avatar__img} src="img/garri_potter.jpg" alt="garri potter" />
           </picture>
           <span className={s.avatar__name}>Garri Potter</span>

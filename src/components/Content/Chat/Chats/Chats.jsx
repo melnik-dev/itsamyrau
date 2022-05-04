@@ -9,7 +9,7 @@ const Chats = () => {
           <div className={s.chat__avatar}>
             <div className={s["chat__avatar-img-wrap"]}>
               <picture>
-                <source srcset="img/ronwezlle.webp" type="image/webp" />
+                <source srcSet="img/ronwezlle.webp" type="image/webp" />
                 <img className={s["chat__avatar-img"]} src="img/ronwezlle.jpg" alt="ron" />
               </picture>
             </div>
