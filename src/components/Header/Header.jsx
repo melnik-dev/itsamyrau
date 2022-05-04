@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import s from "./Header.module.css";
 
 const Header = () => {
@@ -6,7 +7,7 @@ const Header = () => {
     <header className={s.section__header}>
       <div className={`${s.header__avatar} ${s.avatar}`}>
         <picture>
-          <source srcset="img/garri_potter.webp" type="image/webp" />
+          <source srcSet="img/garri_potter.webp" type="image/webp" />
           <img className={s.avatar__img} src="img/garri_potter.jpg" alt="garri potter" />
         </picture>
         <span className={s.avatar__name}>Garri Potter</span>
@@ -14,15 +15,15 @@ const Header = () => {
 
       <nav className={`${s.header__menu} ${s.menu__body}`}>
         <ul className={s.menu__list}>
-          <li className={`${s.menu__item} ${s["menu__item--active"]}`}>
-            <a className={s.menu__link} href="/">
+          <li className={s.menu__item}>
+            <NavLink className={({ isActive }) => (isActive ? s.active__link : undefined) + " " + s.menu__link} to="/">
               <i className="icons icon-houm"></i>Home
-            </a>
+            </NavLink>
           </li>
           <li className={s.menu__item}>
-            <a className={s.menu__link} href="/">
+            <NavLink className={({ isActive }) => (isActive ? s.active__link : undefined) + " " + s.menu__link} to="/chat">
               <i className="icons icon-chats"></i>Chat
-            </a>
+            </NavLink>
           </li>
           <li className={s.menu__item}>
             <a className={s.menu__link} href="/">

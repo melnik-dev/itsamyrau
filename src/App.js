@@ -1,16 +1,23 @@
+import React from "react";
+import "./Reset.css";
 import "./App.css";
 
-import "./Reset.css";
-import "./index.css";
 import Header from "./components/Header/Header";
 import Chat from "./components/Content/Chat/Chat";
+import Home from "./components/Content/Home/Home";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="page__wrapper">
-      <Header />
-      <Chat />
-    </div>
+    <BrowserRouter>
+      <div className="page__wrapper">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/chat" element={<Chat />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

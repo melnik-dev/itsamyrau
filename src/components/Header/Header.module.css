@@ -89,7 +89,7 @@
 }
 
 .menu__body .menu__item:hover .menu__link::after,
-.menu__body .menu__item--active .menu__link::after {
+.active__link::after {
   content: "";
   position: absolute;
   top: 0;
@@ -103,6 +103,6 @@
 }
 
 .menu__body .menu__item:hover .menu__link,
-.menu__body .menu__item--active .menu__link {
-  color: #2a8bf2;
+.active__link {
+  color: #2a8bf2 !important;
 }
