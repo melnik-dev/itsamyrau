@@ -15,22 +15,13 @@ const Header = () => {
 
       <nav className={`${s.header__menu} ${s.menu__body}`}>
         <ul className={s.menu__list}>
-<<<<<<< HEAD
           <li className={s.menu__item}>
             <NavLink className={({ isActive }) => (isActive ? s.active__link : undefined) + " " + s.menu__link} to="/">
-=======
-          <li className={`${s.menu__item} ${s["menu__item--active"]}`}>
-            <a className={s.menu__link} href="/home">
->>>>>>> 58816c596a7f2ab8635389bc89eab9950f184db1
               <i className="icons icon-houm"></i>Home
             </NavLink>
           </li>
           <li className={s.menu__item}>
-<<<<<<< HEAD
             <NavLink className={({ isActive }) => (isActive ? s.active__link : undefined) + " " + s.menu__link} to="/chat">
-=======
-            <a className={s.menu__link} href="/chat">
->>>>>>> 58816c596a7f2ab8635389bc89eab9950f184db1
               <i className="icons icon-chats"></i>Chat
             </NavLink>
           </li>
