@@ -13,11 +13,7 @@ function App() {
       <div className="page__wrapper">
         <Header />
         <Routes>
-<<<<<<< HEAD
           <Route path="/" element={<Home />} />
-=======
-          <Route path="/home" element={<Home />} />
->>>>>>> 58816c596a7f2ab8635389bc89eab9950f184db1
           <Route path="/chat" element={<Chat />} />
         </Routes>
       </div>
