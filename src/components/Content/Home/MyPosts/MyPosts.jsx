@@ -5,9 +5,12 @@ import Post from "./Post/Post";
 const MyPosts = () => {
   return (
     <div className={s.posts}>
-      <h2>Мои посты</h2>
+      <h1 className={s.title}>My Posts</h1>
       <Post message="Высоко, высоко в горах..." />
       <Post message="Первый пост" />
+      <div className={s.input__wrapper}>
+        <input className={s.input} type="text" placeholder="Add your post.." />
+      </div>
     </div>
   );
 };

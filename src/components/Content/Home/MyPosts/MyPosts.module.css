@@ -1,1 +1,40 @@
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+.input__wrapper {
+  background: white;
+  padding: 16px;
+  border-radius: 6px;
+}
+.input {
+  padding: 8px;
+  font-size: 18px;
+  background: rgb(86 128 248 / 10%);
+  border-radius: 18px;
+  width: 100%;
+}
 
+.overflow {
+  overflow-y: scroll;
+  -ms-scroll-snap-type: y;
+  scroll-snap-type: y;
+  padding-right: 10px;
+}
+
+.overflow::-webkit-scrollbar {
+  width: 6px;
+  background-color: #f9f9fd;
+}
+
+.overflow::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: #707c97;
+}
+
+.overflow::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  background-color: #f9f9fd;
+}

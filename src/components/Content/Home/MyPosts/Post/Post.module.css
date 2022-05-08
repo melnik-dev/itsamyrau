@@ -1,0 +1,17 @@
+.post {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+.avatar__img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: lightcoral;
+}
+.text {
+  margin-left: 16px;
+}
