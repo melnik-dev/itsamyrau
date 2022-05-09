@@ -3,16 +3,19 @@ import s from "./ChoiceChat.module.css";
 import ChatAvatar from "./ChatAvatar/ChatAvatar";
 import ChatTitle from "./ChatTitle/ChatTitle";
 import ChatContent from "./ChatContent/ChatContent";
+import { Link } from "react-router-dom";
 
-const ChoiceChat = () => {
+const ChoiceChat = (props) => {
+  let path = "/chat/" + props.id;
+
   return (
-    <div className={s.choice__chat}>
+    <Link className={s.choice__chat} to={path}>
       <div className={s["choice-chat__head"]}>
         <ChatAvatar />
-        <ChatTitle name="Hermione Granger" stat="writes..." time="1 minute ago" />
+        <ChatTitle name={props.name} stat={props.time} time={props.time} />
       </div>
-      <ChatContent text="Hello how are you" msg="2" />
-    </div>
+      <ChatContent text={props.text} msg={props.msg} />
+    </Link>
   );
 };
 

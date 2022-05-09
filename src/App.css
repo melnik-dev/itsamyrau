@@ -44,6 +44,9 @@ body {
   background: -o-linear-gradient(top, #f3f3fb 0%, #fdfbfd 100%);
   background: linear-gradient(180deg, #f3f3fb 0%, #fdfbfd 100%);
 }
+a {
+  color: #0d1c2e;
+}
 
 .page__wrapper {
   display: -ms-grid;

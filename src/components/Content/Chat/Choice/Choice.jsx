@@ -3,6 +3,23 @@ import s from "./Choice.module.css";
 import ChoiceChat from "./ChoiceChat/ChoiceChat";
 
 const Choice = () => {
+  let dialogData = [
+    {
+      name: "Hermione Granger",
+      stat: "writes...",
+      time: "1 minute ago",
+      text: "Hello how are you",
+      msg: "2",
+      id: "1",
+    },
+    {
+      name: "Ron Weasley",
+      stat: "last online 5 hours ago",
+      time: "3 days ago",
+      text: "Hello! I tweaked everything you asked. I am sending the finished file.",
+      id: "2",
+    },
+  ];
   return (
     <section className={s.section__choice}>
       <div className={s.choice__content}>
@@ -11,7 +28,7 @@ const Choice = () => {
             <h1 className={s.choice__title}>Chats</h1>
             <p className={s.choice__subtitle}>Recent Chats</p>
           </div>
-          <button className={`${s.choice__btn} btn`}>
+          <button className={s.btn}>
             <i className="icons icon-plus"></i>Create new Chat
           </button>
         </div>
@@ -22,9 +39,9 @@ const Choice = () => {
           <button className={s["choice__btn-search"]}>Search</button>
         </div>
         <div className={s["choice__chat-wrapper"]}>
-          <ChoiceChat />
-
-          <div className={`${s.choice__chat} ${s["choice__chat-active"]}`}>
+          <ChoiceChat {...dialogData[0]} />
+          <ChoiceChat {...dialogData[1]} />
+          <div className={s["choice__chat-active"]}>
             <div className={s["choice-chat__head"]}>
               <div className={s["choice-chat__avatar"]}>
                 <picture>

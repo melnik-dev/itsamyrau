@@ -1,7 +1,65 @@
 import React from "react";
 import s from "./Chats.module.css";
 
+const MyMessage = (props) => {
+  return (
+    <div className={s["chat-content__messeg-me-wrapp"]}>
+      <button className={s["chat-content__messeg-me-more"]}>
+        <i className="icons icon-dout"></i>
+      </button>
+      <div className={s["chat-content__messeg-me"]}>
+        <span className={s["chat-content__messeg-me-text"]}>{props.message}</span>
+        <span className={s["chat-content__messeg-me-time"]}>{props.writetime}</span>
+      </div>
+
+      <div className={s["chat-content__messeg-me-check"]}>
+        <img className="icon-check" src="img/icons/icons.svg#check" alt="check" width="12" height="12" />
+      </div>
+    </div>
+  );
+};
+const UserMessage = (props) => {
+  return (
+    <div className={`${s["chat-content__messeg-me-wrapp"]} ${s["messeg-user-wrapp"]}`}>
+      <button className={s["chat-content__messeg-me-more"]}>
+        <i className="icons icon-dout"></i>
+      </button>
+      <div className={s["chat-content__messeg-me"]}>
+        <span className={s["chat-content__messeg-me-text"]}>{props.message}</span>
+        <span className={s["chat-content__messeg-me-time"]}>{props.writetime}</span>
+      </div>
+
+      <div className={s["chat-content__messeg-me-check"]}>
+        <img className="icon-check" src="img/icons/icons.svg#check" alt="check" width="12" height="12" />
+      </div>
+    </div>
+  );
+};
 const Chats = () => {
+  let myMessageData = [
+    {
+      id: "1",
+      message: "Hello! I tweaked everything you asked. I am sending the finished file.",
+      writetime: "3 days ago",
+    },
+    {
+      id: "2",
+      message: "Hey! Okay, send out.",
+      writetime: "4 days ago",
+    },
+  ];
+  let userMessageData = [
+    {
+      id: "1",
+      message: "Can I send you files?",
+      writetime: "4 days ago",
+    },
+    {
+      id: "2",
+      message: "Hello! Finally found the time to write to you) I need your help in creating interactive animations for my mobile application.",
+      writetime: "",
+    },
+  ];
   return (
     <section className={s.section__chat}>
       <div className={s.chat__wrapper}>
@@ -29,65 +87,14 @@ const Chats = () => {
           </div>
         </div>
         <div className={s.chat__content}>
-          <div className={s["chat-content__messeg-me-wrapp"]}>
-            <button className={s["chat-content__messeg-me-more"]}>
-              <i className="icons icon-dout"></i>
-            </button>
-            <div className={s["chat-content__messeg-me"]}>
-              <span className={s["chat-content__messeg-me-text"]}>Hello! I tweaked everything you asked. I am sending the finished file.</span>
-              <span className={s["chat-content__messeg-me-time"]}>3 days ago</span>
-            </div>
-
-            <div className={s["chat-content__messeg-me-check"]}>
-              <img className="icon-check" src="img/icons/icons.svg#check" alt="check" width="12" height="12" />
-            </div>
-          </div>
-
-          <div className={`${s["chat-content__messeg-me-wrapp"]} ${s["messeg-user-wrapp"]}`}>
-            <button className={s["chat-content__messeg-me-more"]}>
-              <i className="icons icon-dout"></i>
-            </button>
-            <div className={s["chat-content__messeg-me"]}>
-              <span className={s["chat-content__messeg-me-text"]}>Can I send you files?</span>
-              <span className={s["chat-content__messeg-me-time"]}>4 days ago</span>
-            </div>
-
-            <div className={s["chat-content__messeg-me-check"]}>
-              <img className="icon-check" src="img/icons/icons.svg#check" alt="check" width="12" height="12" />
-            </div>
-          </div>
-
-          <div className={`${s["chat-content__messeg-me-wrapp"]} ${s["messeg-user-wrapp"]}`}>
-            <button className={s["chat-content__messeg-me-more"]}>
-              <i className="icons icon-dout"></i>
-            </button>
-            <div className={s["chat-content__messeg-me"]}>
-              <span className={s["chat-content__messeg-me-text"]}>Hello! Finally found the time to write to you) I need your help in creating interactive animations for my mobile application. </span>
-              <span className={s["chat-content__messeg-me-time"]}></span>
-            </div>
-
-            <div className={s["chat-content__messeg-me-check"]}>
-              <img className="icon-check" src="img/icons/icons.svg#check" alt="check" width="12" height="12" />
-            </div>
-          </div>
-
-          <div className={s["chat-content__messeg-me-wrapp"]}>
-            <button className={s["chat-content__messeg-me-more"]}>
-              <i className="icons icon-dout"></i>
-            </button>
-            <div className={s["chat-content__messeg-me"]}>
-              <span className={s["chat-content__messeg-me-text"]}>Hey! Okay, send out.</span>
-              <span className={s["chat-content__messeg-me-time"]}>4 days ago</span>
-            </div>
-
-            <div className={s["chat-content__messeg-me-check"]}>
-              <img className="icon-check" src="img/icons/icons.svg#check" alt="check" width="12" height="12" />
-            </div>
-          </div>
+          <MyMessage message={myMessageData[0].message} writetime={myMessageData[0].writetime} id={myMessageData[0].id} />
+          <UserMessage message={userMessageData[0].message} writetime={userMessageData[0].writetime} id={userMessageData[0].id} />
+          <UserMessage message={userMessageData[1].message} writetime={userMessageData[1].writetime} id={userMessageData[1].id} />
+          <MyMessage message={myMessageData[1].message} writetime={myMessageData[1].writetime} id={myMessageData[1].id} />
         </div>
         <div className={s["chat__send-wrap"]}>
           <div className={s["chat-send"]}>
-            <button className={`${s["chat-send__btn"]} ${s["chat-send__btn-add"]}`}>
+            <button className={s["chat-send__btn"]}>
               <i className="icons icon-plus"></i>
             </button>
             <div className={s["chat-send__messege-wrapper"]}>

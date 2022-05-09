@@ -5,7 +5,7 @@ import s from "./Header.module.css";
 const Header = () => {
   return (
     <header className={s.section__header}>
-      <div className={`${s.header__avatar} ${s.avatar}`}>
+      <div className={s.avatar}>
         <picture>
           <source srcSet="img/garri_potter.webp" type="image/webp" />
           <img className={s.avatar__img} src="img/garri_potter.jpg" alt="garri potter" />
@@ -13,15 +13,15 @@ const Header = () => {
         <span className={s.avatar__name}>Garri Potter</span>
       </div>
 
-      <nav className={`${s.header__menu} ${s.menu__body}`}>
+      <nav className={s.menu__body}>
         <ul className={s.menu__list}>
           <li className={s.menu__item}>
-            <NavLink className={({ isActive }) => (isActive ? s.active__link : undefined) + " " + s.menu__link} to="/">
+            <NavLink className={({ isActive }) => (isActive ? s.active__link : "") + " " + s.menu__link} to="/">
               <i className="icons icon-houm"></i>Home
             </NavLink>
           </li>
           <li className={s.menu__item}>
-            <NavLink className={({ isActive }) => (isActive ? s.active__link : undefined) + " " + s.menu__link} to="/chat">
+            <NavLink className={({ isActive }) => (isActive ? s.active__link : "") + " " + s.menu__link} to="/chat">
               <i className="icons icon-chats"></i>Chat
             </NavLink>
           </li>
